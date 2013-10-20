@@ -69,8 +69,20 @@
 yo jajajja
 
 \section{Características}
-Hace Sixto
-esta loco
+
+\begin{itemize}
+
+      \item  Ruby es un lenguaje multiplataforma (altamente portable).
+      \item  Es fácil de escribir. 
+      \item  Es un lenguaje interpretado.
+      \item  Es un lenguaje orientado a objetos. Al igual que Java, cada tipo de dato es un objeto.
+      \item  Es una mezcla de varios lenguajes tales como Perl, Python, Smalltalk y otros, que definen a Ruby como un lenguaje que integra la programación funcional e imperativa.
+      \item  Posee expresiones similares(nivel de lenguaje) a las de Perl
+      \item  En Ruby, los métodos se pueden o no ser parte de una clase. Puede ser declarado en cualquier parte del archivo.
+      \item  Es capaz de manejar excepciones.
+      \item  Se puede manejar hilos (multihilos) sin depender del sistema operativo.
+
+\end{itemize}
 
 \section{Historia}
 Hace Jordy
@@ -79,7 +91,43 @@ Hace Jordy
 Hace Cristina
 
 \section{Hola Mundo y otros Programas Introductorios}
-Hace Cris(2), Jordy(1), Sixto(1)
+\begin{itemize}
+      \item {\bf Crear un array}\\
+	\hspace*{7mm} @names = Array.new\\
+      \item {\bf Método [ ]} \\
+	\hspace*{7mm} @names = ["ivan", "luis", "pedro"] \\
+      \item {\bf Método: +}\\
+	\hspace*{7mm} Agregar contenido de un Arrray al final de otro Array.\\
+	\hspace*{7mm}@clientes = ["Juan", "Luis", "Roberto"]\\
+	\hspace*{7mm}@clientes2 = [ "Pierre", "Joe", "Rachel" ]\\
+	\hspace*{7mm}@clientes + @clientes2 \\
+           \hspace*{7mm} Resultado: ["Juan", "Luis", "Roberto", "Pierre", "Joe", "Rachel"]\\
+     \item {\bf Ordenar un arreglo}\\
+	\hspace*{7mm} notasdeberes = [10,7,5,8]\\
+	\hspace*{7mm} notasdeberes.sort\\
+    \item  {\bf Obtener el tamaño de un arreglo}\\
+	\hspace*{7mm} notasdeberes.size()\\
+
+     \item  {\bf Recorrer un arreglo: each}\\
+    	\hspace*{7mm} equipos = ["Barcelona","Milan","PSG","Monaco"]\\
+	\hspace*{7mm} equipos.each do equipo\\
+ 	\hspace*{14mm} puts equipo\\
+	\hspace*{7mm} end\\
+	
+     El método 'each' lo que va hacer es recorrer cada elemento del arreglo equipos. En cada iteración, cada elemento del array se guarda en la variable equipo y se va imprimir cada elemento(cadena) del arreglo equipos ya que se encuentra la función puts que se encarga de        imprimir cada cadena.
+
+     \item {\bf Recorrer el arreglo: for in}\\
+	\hspace*{7mm} for i in equipos\\
+  	\hspace*{14mm}  puts i\\
+	\hspace*{7mm} end\\
+     \hspace*{7mm} Este caso es parecido al ejercicio anterior, sino que ahora se utiliza un ciclo 'for' para recorrer el arreglo. En cada iteración, la variable i toma el valor actual del array equipos, y luego va imprimir dicho elmento ya que se hace un put en cada iteración.\\
+
+
+
+
+\end{itemize}
+
+
 
 
 

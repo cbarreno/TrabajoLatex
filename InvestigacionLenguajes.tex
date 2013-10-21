@@ -43,6 +43,8 @@
 \allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
 % (This matches ConTeXt defaults)
 
+\usepackage{hyperref}
+
 %%% ToC (table of contents) APPEARANCE
 \usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
 \usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
@@ -97,7 +99,19 @@
 \end{enumerate}
 
 \newpage
+\begin{center}
+ {\fontsize{16}{0} \bf Lenguaje Ruby}
+\end{center}
+
+\begin{figure}[h]
+\centering
+ \includegraphics[width=2cm]{./imagenes/ruby.jpg}
+\caption{Logo de Ruby }\label{Fig:Ruby}
+\end{figure}
+
+
 \section{\fontsize{16}{0} \bf Introducción}
+
  Ruby  Lenguaje creado por Yukihiro Matsumoto,  combina lo mejor de la orientación a objetos (smalltalk) y la facilidad del scripting (perl) generando un lenguaje dinámico, muy expresivo, potente, fácil de aprender y que permite crear aplicaciones empresariales robustas, estables y seguras ademas de ser  multiplataforma , es decir puede correr en gran cantidad de arquitecturas , hasta en telefonos celulares, y su implementacion es bajo licencia de software libre .
 
 
@@ -127,8 +141,49 @@ Perl, Smaltalk, Eiffel y Lisp.
 
 \section{\fontsize{16}{0} \bf Tutorial de Instalación}
 
+Como bien sabemos ruby es un lenguaje multiplataforma por lo que aprenderemos a instalrlo en los diferentes sistemas operativos, asi mismo en todos los casos instalaremos la versión de Ruby {\bf 1.9.3} la cual es la version más estable actualmente, ademas te ofrece una extensa lista de paquetes o gemas compatibles y actualizadas.
 
-Hace Cristina
+\begin{itemize}
+\item{\bf Ruby en Windows}
+
+Para instalar el interprete de Ruby en Windows los podemos hacer desde su página oficil visitando  \url{http://rubyinstaller.org/downloads/}  donde descargaremos el $Ruby Installer$ versión $Ruby 1.9.3-p448$ para una arquitectura de 32 bits, si la arquitectura es de 64 bists puedes descargar la versión $Ruby 2.0.0-p247 (x64)$.\\ \\
+
+Después que descarguemos el instalador lo ejecutamos como administrador y empezamos la instalación.Aceptamos el contrato de licensia.Vea $Figura 2$
+
+\begin{figure}[h]
+\centering
+ \includegraphics[width=5cm]{./imagenes/PasoInst1.jpg}
+\caption{Paso de instalación 1}\label{Fig:Paso1}
+\end{figure}
+
+Agregamos lo necesario para la instalación como se observa en la $ Figura 3$
+
+\begin{figure}[h]
+\centering
+ \includegraphics[width=5cm]{./imagenes/PasoInst2.jpg}
+\caption{Paso de instalación 2}\label{Fig:Paso2}
+\end{figure}
+
+Terminamos la instalación. Vea  $Figura 4$
+
+\begin{figure}[h]
+\centering
+ \includegraphics[width=5cm]{./imagenes/PasoInst3.jpg}
+\caption{Paso de instalación 3}\label{Fig:Paso3}
+\end{figure}
+
+Abrimos  $Interactive Ruby$ y comenzamos a trabajar con Ruby desde consola. Vea $ Figura 5$
+\begin{figure}[h]
+\centering
+ \includegraphics[width=8cm]{./imagenes/PasoInst4.jpg}
+\caption{Paso de instalación 4}\label{Fig:Paso4}
+\end{figure}
+
+%\item{\bf Ruby en Linux}
+%\item{\bf Ruby en Mac OS}
+
+\end{itemize}
+
 
 \section{\fontsize{16}{0} \bf Hola Mundo y otros Programas Introductorios}
 
@@ -139,8 +194,11 @@ A continuación revisaremos algunos programas básicos en ruby para esto solo ne
 
 Para hacer que nuestro programa escriba $"Hola Mundo"$ usaremos el comando $puts  "Hola Mundo"$, siendo  $"puts"$ el comando básico para escribir algo en ruby. \\
 
- \includegraphics[width=12cm]{./imagenes/5.jpg}\\\\
-
+\begin{figure}[h]
+\centering
+ \includegraphics[width=11cm]{./imagenes/Hola.jpg}\\
+\caption{Entrada del comando usado y su salida por consola }\label{Fig:Hola}
+\end{figure}
 
  {\fontsize{14}{0} \bf Ejemplo 2: Trabajando con arreglos y Strings \\ }
 \begin{itemize}

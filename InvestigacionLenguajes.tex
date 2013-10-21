@@ -98,8 +98,8 @@
 
 \newpage
 \section{\fontsize{16}{0} \bf Introducción}
- Hara Jordy
-yo jajajja
+ Ruby  Lenguaje creado por Yukihiro Matsumoto,  combina lo mejor de la orientación a objetos (smalltalk) y la facilidad del scripting (perl) generando un lenguaje dinámico, muy expresivo, potente, fácil de aprender y que permite crear aplicaciones empresariales robustas, estables y seguras ademas de ser  multiplataforma , es decir puede correr en gran cantidad de arquitecturas , hasta en telefonos celulares, y su implementacion es bajo licencia de software libre .
+
 
 \section{\fontsize{14}{0} \bf Características}
 
@@ -118,7 +118,12 @@ yo jajajja
 \end{itemize}
 
 \section{\fontsize{16}{0} \bf Historia}
-Hace Jordy
+Yukihiro Matsumoto crea  Ruby  en Japon en el año 1993, mientras trabajaba en lenguajes como Perl y PHP, pero se ve tentado en vez de crear un Perl mejorado,  su propio lenguaje combinando asi: \begin{bf}
+Perl, Smaltalk, Eiffel y Lisp.
+\end{bf} Su nombre proviene como referencia al lenguaje Perl(perla) el cual originalmente deseaba mejorar.\\ \\Se lanza al publico en el año 1995, trayendo asi desarrolladores de todo el mundo, que ven a a Ruby como un lenguaje de exploraccion. Tiene un crecimiento lento pero seguro hasta que David Heinemeier Hansson crea el framework Rails , el cual impulsa su crecimiento llevandolo a ser dominado como el
+\begin{bf}
+" Lenguaje de Progra~maccion del 2006" 
+\end{bf} e instalandolo entre los 10 mas populares actualmente.
 
 \section{\fontsize{16}{0} \bf Tutorial de Instalación}
 
@@ -134,47 +139,50 @@ A continuación revisaremos algunos programas básicos en ruby para esto solo ne
 
 Para hacer que nuestro programa escriba $"Hola Mundo"$ usaremos el comando $puts  "Hola Mundo"$, siendo  $"puts"$ el comando básico para escribir algo en ruby. \\
 
- \includegraphics[width=12cm]{./imagenes/5.jpg}
-
- {\fontsize{14}{0} \bf Ejemplo 2: Operaciones básicas\\}
-aaa\\
-
- {\fontsize{14}{0} \bf Ejemplo 3: Trabajando con arreglos\\ \\ }
-aa\\
-
- {\fontsize{14}{0} \bf Ejemplo 4: Trabajando con Strings\\ }
+ \includegraphics[width=12cm]{./imagenes/5.jpg}\\\\
 
 
+ {\fontsize{14}{0} \bf Ejemplo 2: Trabajando con arreglos y Strings \\ }
 \begin{itemize}
-      \item {\bf Crear un array}\\
-	\hspace*{7mm} @names = Array.new\\
-      \item {\bf Método [ ]} \\
-	\hspace*{7mm} @names = ["ivan", "luis", "pedro"] \\
-      \item {\bf Método: +}\\
-	\hspace*{7mm} Agregar contenido de un Arrray al final de otro Array.\\
-	\hspace*{7mm}@clientes = ["Juan", "Luis", "Roberto"]\\
-	\hspace*{7mm}@clientes2 = [ "Pierre", "Joe", "Rachel" ]\\
-	\hspace*{7mm}@clientes + @clientes2 \\
-           \hspace*{7mm} Resultado: ["Juan", "Luis", "Roberto", "Pierre", "Joe", "Rachel"]\\
-     \item {\bf Ordenar un arreglo}\\
-	\hspace*{7mm} notasdeberes = [10,7,5,8]\\
-	\hspace*{7mm} notasdeberes.sort\\
-    \item  {\bf Obtener el tamaño de un arreglo}\\
-	\hspace*{7mm} notasdeberes.size()\\
+      \item {\bf Crear un array}\\\\
+    \includegraphics[width=0.7\textwidth]{./imagenes/new_array}\\
 
-     \item  {\bf Recorrer un arreglo: each}\\
-    	\hspace*{7mm} equipos = ["Barcelona","Milan","PSG","Monaco"]\\
-	\hspace*{7mm} equipos.each do equipo\\
- 	\hspace*{14mm} puts equipo\\
-	\hspace*{7mm} end\\
+
+      \item {\bf Método [ ]} \\\\
+    \includegraphics[width=0.9\textwidth]{./imagenes/crear_2}\\\\
+Crea el Array y lo inicializa con strings\\
+      \item {\bf Método: +}\\\\
+    \includegraphics[width=0.9\textwidth]{./imagenes/suma}\\\\
+        Metodo para unir  un array al final de otro.
+
+     \item {\bf Ordenar un arreglo}\\\\
+    \includegraphics[width=0.9\textwidth]{./imagenes/ordenar}\\
+
+    \item  {\bf Obtener el tamaño de un arreglo}\\\\
+        \includegraphics[width=0.9\textwidth]{./imagenes/size}\\\\
+
+     \item  {\bf Recorrer un arreglo: each}\\\\
+        \includegraphics[width=0.9\textwidth]{./imagenes/each}\\
 	
      El método 'each' lo que va hacer es recorrer cada elemento del arreglo equipos. En cada iteración, cada elemento del array se guarda en la variable equipo y se va imprimir cada elemento(cadena) del arreglo equipos ya que se encuentra la función puts que se encarga de        imprimir cada cadena.
 
-     \item {\bf Recorrer el arreglo: for in}\\
-	\hspace*{7mm} for i in equipos\\
-  	\hspace*{14mm}  puts i\\
-	\hspace*{7mm} end\\
-     \hspace*{7mm} Este caso es parecido al ejercicio anterior, sino que ahora se utiliza un ciclo 'for' para recorrer el arreglo. En cada iteración, la variable i toma el valor actual del array equipos, y luego va imprimir dicho elmento ya que se hace un put en cada iteración.\\
+     \item {\bf Recorrer el arreglo: for in}\\\\
+	    \includegraphics[width=0.9\textwidth]{./imagenes/for}\\\\
+     Este caso es parecido al ejercicio anterior, sino que ahora se utiliza un ciclo 'for' para recorrer el arreglo. En cada iteración, la variable i toma el valor actual del array equipos, y luego va imprimir dicho elmento ya que se hace un put en cada iteración.\\
+
+
+    \item {\bf Igualdad entre arreglos}\\\\
+	    \includegraphics[width=0.9\textwidth]{./imagenes/igualdad}\\\\
+Devuelve false si no son iguales y true si lo son.
+
+ {\fontsize{14}{0} \bf Ejemplo 3: objecto y metodos\\}
+  \item {\bf Ejemplo de crear un objecto y un metodo}\\\\
+	    \includegraphics[width=0.9\textwidth]{./imagenes/objeto}\\\\
+Las palabras claves son class para darle el nombre a nuestro objecto,  def  initialize  para inicializarlo , y def ...(y el nombre del metodo) para crear un metodo para el objecto\\
+  	   \subitem{\bf Utilizando el objecto y su metodo}\\\\
+	    \includegraphics[width=0.9\textwidth]{./imagenes/ejemplo_de_clase}\\\\
+Hacemos una instancia del objeto poniendo el [nombre del objeto].new, e inicializandolo ya sea con vacio o con un valor, y para utilizar el metodo de la misma forma [nombre del objeto].[nombe del metodo] como muestra Numero2.ver.\\
+
 
 \end{itemize}
 
@@ -182,6 +190,11 @@ aa\\
 \section{\bf Referencias}
 \begin{itemize}
           \item  https://www.ruby-lang.org/es/about/ \\
+          \item http://es.wikibooks.org/wiki/Programación\_en\_Ruby/Historia\\
+	\item http://www.maestrosdelweb.com/editorial/la-clase-array-en-ruby/\\
+	\item https://www.ruby-lang.org/es/documentation/quickstart/2/\\
+	\item http://eudev2.uta.cl/rid=1GR0DSG4D-1Y1NH87-4RQ/ruby.pdf\\
+	\item http://www.ecured.cu/index.php/Lenguaje\_de\_Programación\_Ruby\\
 	\item http://es.wikipedia.org/wiki/Ruby\#Caracter.C3.ADsticas \\
 	\item  http://es.wikibooks.org/wiki/Programación\_en\_Ruby\#Caracter.C3.ADsticas\\
 \_Especiales\_del\_Lenguaje \\

@@ -21,6 +21,9 @@
 
 \usepackage{graphicx} % support the \includegraphics command and options
 
+\usepackage{listings}
+
+
 % \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
 
 %%% PACKAGES
@@ -195,13 +198,19 @@ A continuación revisaremos algunos programas básicos en ruby para esto solo ne
 
  {\fontsize{14}{0} \bf Ejemplo 1: Hola Mundo\\}
 
-Para hacer que nuestro programa escriba $"Hola Mundo"$ usaremos el comando $puts  "Hola Mundo"$, siendo  $"puts"$ el comando básico para escribir algo en ruby. \\
+Para hacer que nuestro programa escriba $"Hola Mundo"$ usaremos el comando $puts Hola Mundo"$,
+ siendo  $"puts"$ el comando básico para escribir algo en ruby. \\
 
-\begin{figure}[h]
-\centering
- \includegraphics[width=11cm]{./imagenes/Hola.jpg}\\
-\caption{Entrada del comando usado y su salida por consola }\label{Fig:Hola}
-\end{figure}
+          % Set your language (you can change the language for each code-block optionally)
+
+\begin{lstlisting}[frame=single]  % Start your code-block
+using System;
+       puts  "Hola Mundo"
+\end{lstlisting}
+\begin{center}
+Pograma Hola Mundo
+\end{center}
+
 
  {\fontsize{14}{0} \bf Ejemplo 2: Trabajando con arreglos y Strings \\ }
 \begin{itemize}

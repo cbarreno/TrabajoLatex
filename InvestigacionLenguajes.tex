@@ -43,7 +43,15 @@
 \allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
 % (This matches ConTeXt defaults)
 
+%\usepackage[colorlinks=true]{hyperref}
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
 %%% ToC (table of contents) APPEARANCE
 \usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
@@ -59,9 +67,8 @@
 
 
 \title{\fontsize{30}{0} \bf Lenguaje Ruby}
-
 \author{\\Autores: \\  \\-Cristina Barreno \\ -Sixto Castro \\ -Jordy Vasquez\\ \\}
-
+\thispagestyle{empty}
 \begin{document}
 
 \newpage
@@ -79,24 +86,16 @@
 {\LARGE{ Paralelo: 1}}\\
 \vspace{2cm}
 {\LARGE{Fecha de entrega: \\  Miércoles, 23 de Octubre del 2013}}
-
+\thispagestyle{empty}
 \end{center}
 
 
 \maketitle
 
 \newpage
-%\tableofcontents % No hace falta un TOC en un artículo corto
-{\hspace{3cm} \fontsize{20}{0} \bf  Tabla de Contenidos \\ \\}
-
-\begin{enumerate}
-\item {\fontsize{14}{0} Introducción\\ \\}
-\item {\fontsize{14}{0} Características\\ \\}
-\item {\fontsize{14}{0} Historia\\ \\}
-\item {\fontsize{14}{0} Tutorial de instalación\\ \\}
-\item Hola Mundo y otros programas introductorios\\ \\
-\item Referencias bibliográficas\\ \\
-\end{enumerate}
+\tableofcontents % No hace falta un TOC en un artículo corto
+\thispagestyle{empty}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
 
 \newpage
 \begin{center}
@@ -110,7 +109,7 @@
 \end{figure}
 
 
-\section{\fontsize{16}{0} \bf Introducción}
+\section{\fontsize{14}{0} \bf Introducción}
 
  Ruby  Lenguaje creado por Yukihiro Matsumoto,  combina lo mejor de la orientación a objetos (smalltalk) y la facilidad del scripting (perl) generando un lenguaje dinámico, muy expresivo, potente, fácil de aprender y que permite crear aplicaciones empresariales robustas, estables y seguras ademas de ser  multiplataforma , es decir puede correr en gran cantidad de arquitecturas , hasta en telefonos celulares, y su implementacion es bajo licencia de software libre .
 
@@ -131,51 +130,54 @@
 
 \end{itemize}
 
-\section{\fontsize{16}{0} \bf Historia}
+\section{\fontsize{14}{0} \bf Historia}
 Yukihiro Matsumoto crea  Ruby  en Japon en el año 1993, mientras trabajaba en lenguajes como Perl y PHP, pero se ve tentado en vez de crear un Perl mejorado,  su propio lenguaje combinando asi: \begin{bf}
 Perl, Smaltalk, Eiffel y Lisp.
 \end{bf} Su nombre proviene como referencia al lenguaje Perl(perla) el cual originalmente deseaba mejorar.\\ \\Se lanza al publico en el año 1995, trayendo asi desarrolladores de todo el mundo, que ven a a Ruby como un lenguaje de exploraccion. Tiene un crecimiento lento pero seguro hasta que David Heinemeier Hansson crea el framework Rails , el cual impulsa su crecimiento llevandolo a ser dominado como el
 \begin{bf}
 " Lenguaje de Progra~maccion del 2006" 
-\end{bf} e instalandolo entre los 10 mas populares actualmente.
+\end{bf} e instalandolo entre los 10 mas populares actualmente.\\ \\
 
-\section{\fontsize{16}{0} \bf Tutorial de Instalación}
+
+\section{\fontsize{14}{0} \bf Tutorial de Instalación}
 
 Como bien sabemos ruby es un lenguaje multiplataforma por lo que aprenderemos a instalrlo en los diferentes sistemas operativos, asi mismo en todos los casos instalaremos la versión de Ruby {\bf 1.9.3} la cual es la version más estable actualmente, ademas te ofrece una extensa lista de paquetes o gemas compatibles y actualizadas.
+\newpage
 
 \begin{itemize}
-\item{\bf Ruby en Windows}
+\item{\bf Ruby en Windows\\ \\}
 
 Para instalar el interprete de Ruby en Windows los podemos hacer desde su página oficil visitando  \url{http://rubyinstaller.org/downloads/}  donde descargaremos el $Ruby Installer$ versión $Ruby 1.9.3-p448$ para una arquitectura de 32 bits, si la arquitectura es de 64 bists puedes descargar la versión $Ruby 2.0.0-p247 (x64)$.\\ \\
 
-Después que descarguemos el instalador lo ejecutamos como administrador y empezamos la instalación.Aceptamos el contrato de licensia.Vea $Figura 2$
-
+{Después que descarguemos el instalador lo ejecutamos como administrador y empezamos la instalación.Aceptamos el contrato de licensia.Vea $Figura 2$.\\ \\
 \begin{figure}[h]
 \centering
- \includegraphics[width=5cm]{./imagenes/PasoInst1.jpg}
+ \includegraphics[width=12cm]{./imagenes/PasoInst1.jpg}
 \caption{Paso de instalación 1}\label{Fig:Paso1}
-\end{figure}
+\end{figure}}
 
-Agregamos lo necesario para la instalación como se observa en la $ Figura 3$
+\newpage
+{Agregamos lo necesario para la instalación como se observa en la $ Figura 3$.\\ \\
 
 \begin{figure}[h]
 \centering
- \includegraphics[width=5cm]{./imagenes/PasoInst2.jpg}
+ \includegraphics[width=14cm]{./imagenes/PasoInst2.jpg}
 \caption{Paso de instalación 2}\label{Fig:Paso2}
-\end{figure}
+\end{figure}}
 
-Terminamos la instalación. Vea  $Figura 4$
+\newpage
+{Terminamos la instalación. Vea  $Figura 4$.\\
 
 \begin{figure}[h]
 \centering
- \includegraphics[width=5cm]{./imagenes/PasoInst3.jpg}
+ \includegraphics[width=14cm]{./imagenes/PasoInst3.jpg}
 \caption{Paso de instalación 3}\label{Fig:Paso3}
-\end{figure}
+\end{figure}}
 
-Abrimos  $Interactive Ruby$ y comenzamos a trabajar con Ruby desde consola. Vea $ Figura 5$
+Abrimos  $Interactive Ruby$ y comenzamos a trabajar con Ruby desde consola. Vea $ Figura 5$.
 \begin{figure}[h]
 \centering
- \includegraphics[width=8cm]{./imagenes/PasoInst4.jpg}
+ \includegraphics[width=16cm]{./imagenes/PasoInst4.jpg}
 \caption{Paso de instalación 4}\label{Fig:Paso4}
 \end{figure}
 
@@ -185,7 +187,7 @@ Abrimos  $Interactive Ruby$ y comenzamos a trabajar con Ruby desde consola. Vea 
 \end{itemize}
 
 
-\section{\fontsize{16}{0} \bf Hola Mundo y otros Programas Introductorios}
+\section{\fontsize{14}{0} \bf Hola Mundo y otros Programas Introductorios}
 
 A continuación revisaremos algunos programas básicos en ruby para esto solo necesitamos tener instalado en nuestro computador el interprete de ruby, abramos el terminal $ Interactive Ruby$  y empecemos a  programar. Aunque  solo trabajaremos desde consola  recordemos que esta es una herramienta poderosa con la cual daremos nuestros primeros pasos en el mundo de ruby.\\ \\
 
@@ -252,19 +254,19 @@ Hacemos una instancia del objeto poniendo el [nombre del objeto].new, e iniciali
 
 \end{itemize}
 
-
-\section{\bf Referencias}
+\newpage
+\section{\fontsize{14}{0} \bf Referencias}
 \begin{itemize}
-          \item  https://www.ruby-lang.org/es/about/ \\
-          \item http://es.wikibooks.org/wiki/Programación\_en\_Ruby/Historia\\
-	\item http://www.maestrosdelweb.com/editorial/la-clase-array-en-ruby/\\
-	\item https://www.ruby-lang.org/es/documentation/quickstart/2/\\
-	\item http://eudev2.uta.cl/rid=1GR0DSG4D-1Y1NH87-4RQ/ruby.pdf\\
-	\item http://www.ecured.cu/index.php/Lenguaje\_de\_Programación\_Ruby\\
-	\item http://es.wikipedia.org/wiki/Ruby\#Caracter.C3.ADsticas \\
-	\item  http://es.wikibooks.org/wiki/Programación\_en\_Ruby\#Caracter.C3.ADsticas\\
+          \item [1.] https://www.ruby-lang.org/es/about/ \\
+          \item [2.] http://es.wikibooks.org/wiki/Programación\_en\_Ruby/Historia\\
+	\item[3.]  http://www.maestrosdelweb.com/editorial/la-clase-array-en-ruby/\\
+	\item[4.] https://www.ruby-lang.org/es/documentation/quickstart/2/\\
+	\item[5.] http://eudev2.uta.cl/rid=1GR0DSG4D-1Y1NH87-4RQ/ruby.pdf\\
+	\item[6.] http://www.ecured.cu/index.php/Lenguaje\_de\_Programación\_Ruby\\
+	\item[7.]  http://es.wikipedia.org/wiki/Ruby\#Caracter.C3.ADsticas \\
+	\item[8.]  http://es.wikibooks.org/wiki/Programación\_en\_Ruby\#Caracter.C3.ADsticas\\
 \_Especiales\_del\_Lenguaje \\
-	 \item http://www.ecured.cu/index.php/Lenguaje\_de\_Programación\_Ruby\#Caracter.C3.ADsticas\\
+	 \item[9.] http://www.ecured.cu/index.php/Lenguaje\_de\_Programación\_Ruby\#Caracter.C3.ADsticas\\
 \_generales\_del\_lenguaje \\
 
 \end{itemize}

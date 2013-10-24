@@ -205,45 +205,97 @@ Para hacer que nuestro programa escriba $"Hola Mundo"$ usaremos el comando $puts
 
 \begin{lstlisting}[frame=single]  % Start your code-block
 using System;
-       puts  "Hola Mundo"
+     puts  "Hola Mundo"
 \end{lstlisting}
 \begin{center}
-Pograma Hola Mundo
+Programa Hola Mundo
 \end{center}
 
 
  {\fontsize{14}{0} \bf Ejemplo 2: Trabajando con arreglos y Strings \\ }
 \begin{itemize}
+
       \item {\bf Crear un array}\\\\
-
-    \includegraphics[width=0.9\textwidth]{./imagenes/CreateArray}\\
+\begin{lstlisting}[frame=single]  % Start your code-block
+using System;
+       @names = Array.new
+\end{lstlisting}
+\begin{center}   
 Crea un Array vacío.\\
-
+\end{center}
 
       \item {\bf Método [ ]} \\\\
-    \includegraphics[width=0.9\textwidth]{./imagenes/InicializarArray}\\\\
+\begin{lstlisting}[frame=single]  % Start your code-block
+using System;
+     @names = ["Juan", "Luis", "Roberto"]
+\end{lstlisting}
+\begin{center}
 Crea el Array y lo inicializa con strings
+\end{center}
+\bf Salida\\\\
+    \includegraphics[width=0.9\textwidth]{./imagenes/InicializarArray}\\\\
+
 \newpage
 
       \item {\bf Método: +}\\\\
+\begin{lstlisting}[frame=single]  % Start your code-block
+using System;
+       @clientes = ["Juan", "Luis", "Roberto"]
+       @clientes2 = ["Pierre", "Joe", "Rachel"]
+       @clientes + @clientes2
+\end{lstlisting}
+\begin{center}   
+Metodo para unir un array al final de otro.
+\end{center}
+\bf Salida\\\\
     \includegraphics[width=0.9\textwidth]{./imagenes/Metodo+}\\\\
-        Metodo para unir un array al final de otro.\\
+        
 
      \item {\bf Ordenar un arreglo}\\\\
+\begin{lstlisting}[frame=single]  % Start your code-block
+using System;
+     notasdeberes = [10,7,5,8]
+     notasdeberes.sort
+\end{lstlisting}
+\begin{center}
+Ordena un Array de menor a mayor
+\end{center}
+\bf Salida\\\\
     \includegraphics[width=0.9\textwidth]{./imagenes/OrdenarArreglo}\\
 
-    \item  {\bf Obtener el tamaño de un arreglo}\\\\
-        \includegraphics[width=0.9\textwidth]{./imagenes/SizeArreglo}\\\\
+
 \newpage
 
+    \item  {\bf Obtener el tamaño de un arreglo}\\\\
+\begin{lstlisting}[frame=single]  % Start your code-block
+using System;
+     notasdeberes.size()
+\end{lstlisting}
+\bf Salida\\\\
+        \includegraphics[width=0.9\textwidth]{./imagenes/SizeArreglo}\\\\
+
+
      \item  {\bf Recorrer un arreglo: each}\\\\
+\begin{lstlisting}[frame=single]  % Start your code-block
+equipos = ["Barcelona","Milan","PSG","Monaco"]
+equipos.each do |equipo|
+  puts equipo
+end
+\end{lstlisting}
+\bf Salida\\\\
         \includegraphics[width=0.9\textwidth]{./imagenes/RecorrerArregloEach}\\\\
      El método 'each' lo que va hacer es recorrer cada elemento del arreglo equipos. En cada iteración, cada elemento del array se guarda en la variable equipo y se va imprimir cada elemento(cadena) del arreglo equipos ya que se encuentra la función puts que se encarga de imprimir cada cadena.\\
 
 	
 
      \item {\bf Recorrer el arreglo: for in}\\\\
-
+\begin{lstlisting}[frame=single]  % Start your code-block
+using System;
+for i in equipos
+  puts i
+end
+\end{lstlisting}
+\bf Salida\\\\
 	    \includegraphics[width=0.9\textwidth]{./imagenes/RecorridoForin}\\\\
      Este caso es parecido al ejercicio anterior, sino que ahora se utiliza un ciclo 'for' para recorrer el arreglo. En cada iteración, la variable i toma el valor actual del array equipos, y luego va imprimir dicho elmento ya que se hace un put en cada iteración.\\
 \newpage

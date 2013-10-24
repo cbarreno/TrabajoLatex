@@ -301,16 +301,51 @@ end
 \newpage
 
     \item {\bf Igualdad entre arreglos}\\\\
+\begin{lstlisting}[frame=single]  % Start your code-block
+using System;
+alumnos1=["Jorge","Luis","Jordy"]
+alumnos2=["Orlando","Gabriel","Steven"]
+alumnos1=alumnos2
+\end{lstlisting}
+\bf Salida\\\\
 	    \includegraphics[width=0.9\textwidth]{./imagenes/igualdad_entre_arreglos}\\\\
 Devuelve false si no son iguales y true si lo son.\\\\
 
  {\fontsize{14}{0} \bf Ejemplo 3: objecto y metodos\\}
   \item {\bf Ejemplo de crear un objecto y un metodo}\\\\
-	    \includegraphics[width=0.9\textwidth]{./imagenes/crear_objecto}\\\\
-Las palabras claves son class para darle el nombre a nuestro objecto,  def  initialize  para inicializarlo , y def ...(y el nombre del metodo) para crear un metodo para el objecto\\
-\newpage
-  	   \subitem{\bf Utilizando el objecto y su metodo}\\\\
+\begin{lstlisting}[frame=single]  % Start your code-block
+using System;
+ class Rango
+def initialize(caso=0)
+@caso=caso
+end
+def  ver
+case @caso
+when 1, 2..5
+print"el numero esta dentro del rango 1 a 5"
+when 6.. 10
+print"el numero esta dentro del rango 6 a 10"
+else
+print"el numero esta fuera del rango"
+end
+end
+end
+\end{lstlisting}
+
+	    
+Las palabras claves son class para darle el nombre a nuestro objecto,  def  initialize  para inicializarlo , y def ...(y el nombre del metodo) para crear un metodo para el objecto\\\\
+
+  	   \subitem{\bf Utilizando el objecto y su metodo}\\
+\begin{lstlisting}[frame=single]  % Start your code-block
+using System;
+numero=Rango.new(5)
+numero.ver
+
+\end{lstlisting}
+\bf Salida\\\\
 	    \includegraphics[width=0.9\textwidth]{./imagenes/uso_objecto}\\\\
+
+\bf Salida\\\\
 Hacemos una instancia del objeto poniendo el [nombre del objeto].new, e inicializandolo ya sea con vacio o con un valor, y para utilizar el metodo de la misma forma [nombre del objeto].[nombe del metodo] como muestra Numero2.ver.\\
 
 
